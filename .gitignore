@@ -1,0 +1,25 @@
+# dependensi dan hasil build
+node_modules/
+dist/
+
+# data pribadi: database SQLite (percakapan, perusahaan), JSON lama, dan cadangan
+data/
+data-backup-*/
+*.db
+*.db-wal
+*.db-shm
+
+# folder proyek bawaan: berkas hasil kerja agen
+workdir/
+
+.env
+.env.*
+*.log
+
+# lain-lain
+*.tsbuildinfo
+.claude/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

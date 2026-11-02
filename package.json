@@ -1,0 +1,32 @@
+{
+  "name": "kantor-agen-ai",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Kantor 3D tempat agen Claude bekerja sebagai karyawan (self-hosted lokal)",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "concurrently -n server,web -c yellow,cyan \"node server/index.mjs\" \"vite\"",
+    "build": "tsc -b && vite build",
+    "start": "node server/index.mjs"
+  },
+  "dependencies": {
+    "@react-three/drei": "9.117.3",
+    "@react-three/fiber": "8.17.10",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "three": "0.170.0",
+    "zustand": "5.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@types/three": "0.170.0",
+    "@vitejs/plugin-react": "4.3.4",
+    "concurrently": "9.1.0",
+    "typescript": "5.6.3",
+    "vite": "6.0.3"
+  }
+}
